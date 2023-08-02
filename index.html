@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css.css">
+    <title>Uniuyo gallery page</title>
+</head>
+<body>
+    <nav class="navabar">
+        <h1 class="logo">Menu</h1>
+        <ul class="nav-links">
+            <li><a href="#">Home</a>
+                <li><a href="#">Gallery</a>
+                    <li><a href="#">About me</a>
+                    <li><a class="ctn" href="#">News</a>
+            </li>
+        </ul>
+        <img src="jpg/menu.png" alt="" class="menu-btn"
+    </nav>
+    <header>
+    <div class="header_content">
+        <h2>UNIVERSITY OF UYO</h2>
+        <div class="line"></div>
+        <h1>GALLERY WEBPAGE</h1>
+        <a href="#" class="ctn">Learn More</a>
+    </div>
+</header>
+<script>
+    const menubtn = document.querySelector('.menu-btn')
+    const navlinks = document.querySelector('.nav-links')
+
+    menubtn.addEventListener('click', ()=>{
+        navlinks.classList.toggle('mobile-menu')})
+
+</script>
+</body>
+</html>
